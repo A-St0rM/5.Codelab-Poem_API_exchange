@@ -3,23 +3,19 @@ GET http://localhost:7007/api/v1/
 
 ###
 
-### Get all highscores
+### Get all poems
 GET http://localhost:7007/api/v1/poems
 
 ###
 
-### Create new highscores (accepts array)
-POST http://localhost:7076/api/v1/highscore
+### Create new a new poem
+POST http://localhost:7076/api/v1/poems
 Content-Type: application/json
 
 [
   {
-    "userName": "Alice",
-    "score": 1500
-  },
-  {
-    "userName": "Bob",
-    "score": 2000
+    "author": "Alice",
+    "content": "In a galaxy, far far away, there was a planet called pluto"
   }
 ]
 
