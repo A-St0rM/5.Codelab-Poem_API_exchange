@@ -14,7 +14,9 @@ public class PoemDTO {
     private String content;
 
     public PoemDTO(Poem poem){
-        new PoemDTO(poem.getId(), poem.getAuthor(), poem.getContent());
+        this.id = poem.getId();
+        this.author = poem.getAuthor();
+        this.content = poem.getContent();
     }
 
 }

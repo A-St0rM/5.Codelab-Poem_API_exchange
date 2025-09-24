@@ -1,0 +1,26 @@
+### Test root endpoint
+GET http://localhost:7007/api/v1/
+
+###
+
+### Get all highscores
+GET http://localhost:7007/api/v1/poems
+
+###
+
+### Create new highscores (accepts array)
+POST http://localhost:7076/api/v1/highscore
+Content-Type: application/json
+
+[
+  {
+    "userName": "Alice",
+    "score": 1500
+  },
+  {
+    "userName": "Bob",
+    "score": 2000
+  }
+]
+
+###

@@ -1,10 +1,12 @@
 package app.DAO;
 
 
-public class PoemDAO extends GenericDAO {
+import app.entities.Poem;
 
-    public PoemDAO(Class entityClass) {
-        super(entityClass);
+public class PoemDAO extends GenericDAO<Poem, Integer> {
+
+    public PoemDAO() {
+        super(Poem.class);
     }
 
 }
